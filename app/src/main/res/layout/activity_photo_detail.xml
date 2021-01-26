@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarDetail"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/top_app_bar_details"
+            app:title="Foto details" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgPhotoDetail"
+                android:layout_width="@dimen/photo_detail_width"
+                android:layout_height="@dimen/photo_detail_height"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/screen_border_margin"
+                android:contentDescription="@string/img_photo_description"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textNameDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgPhotoDetail"
+                android:layout_margin="@dimen/photo_detail_margin"
+                android:text="@string/name" />
+
+            <TextView
+                android:id="@+id/txtNameDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgPhotoDetail"
+                android:layout_margin="@dimen/photo_detail_margin"
+                android:layout_toEndOf="@id/textNameDetail"
+                tools:text="Naam123" />
+
+            <TextView
+                android:id="@+id/textDateDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textNameDetail"
+                android:layout_margin="@dimen/photo_detail_margin"
+                android:text="@string/date" />
+
+            <TextView
+                android:id="@+id/txtDateDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textNameDetail"
+                android:layout_margin="@dimen/photo_detail_margin"
+                android:layout_toEndOf="@id/textDateDetail"
+                tools:text="01-01-2001" />
+
+            <RelativeLayout
+                android:id="@+id/editedRelLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textDateDetail"
+                android:layout_margin="@dimen/photo_detail_margin"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textEmployeeDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/employee_of_the_month" />
+
+                <TextView
+                    android:id="@+id/txtMonthDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text_month_margin"
+                    android:layout_toEndOf="@id/textEmployeeDetail"
+                    tools:text="maart" />
+
+                <TextView
+                    android:id="@+id/txtNameEmployeeDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textEmployeeDetail"
+                    android:layout_marginTop="@dimen/photo_detail_top_margin"
+                    tools:text="Karel Janssen" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/detailFabShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/screen_border_margin"
+        android:contentDescription="@string/share_photo"
+        android:src="@drawable/ic_baseline_share_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/detailFabEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/screen_border_margin"
+        android:contentDescription="@string/edit_photo"
+        android:src="@drawable/ic_baseline_edit_24" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

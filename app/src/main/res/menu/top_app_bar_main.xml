@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/top_camera"
+        android:contentDescription="@string/take_photo_description"
+        android:icon="@drawable/ic_baseline_camera_24"
+        android:title="@string/take_photo"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/top_add_photo"
+        android:contentDescription="@string/load_photo_description"
+        android:icon="@drawable/ic_baseline_add_photo_alternate_24"
+        android:title="@string/load_photo"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/top_expand_all"
+        android:contentDescription="@string/expand_description"
+        android:title="@string/expand_cards"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/top_collapse_all"
+        android:contentDescription="@string/collapse_description"
+        android:title="@string/collapse_cards"
+        app:showAsAction="never" />
+
+</menu>

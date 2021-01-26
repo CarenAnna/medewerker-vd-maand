@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_border_margin">16dp</dimen>
+    <dimen name="default_text_size">15sp</dimen>
+    <dimen name="bottom_nav_height">55dp</dimen>
+
+    <dimen name="fab_bottom_margin">70dp</dimen>
+
+    <dimen name="photo_detail_width">340dp</dimen>
+    <dimen name="photo_detail_height">323dp</dimen>
+    <dimen name="photo_detail_margin">20dp</dimen>
+    <dimen name="photo_detail_top_margin">8dp</dimen>
+    <dimen name="text_month_margin">6dp</dimen>
+
+    <dimen name="card_dimen_value">7dp</dimen>
+    <dimen name="card_layout_margin">5dp</dimen>
+    <dimen name="card_height">100dp</dimen>
+    <dimen name="card_text_size">13sp</dimen>
+
+    <dimen name="dialog_margin_top">10dp</dimen>
+    <dimen name="text_margin_top">10dp</dimen>
+    <dimen name="saving_text_height">110dp</dimen>
+
+    <dimen name="sticker_width">100dp</dimen>
+    <dimen name="sticker_height">100dp</dimen>
+
+    <dimen name="stroke_size">3sp</dimen>
+</resources>
